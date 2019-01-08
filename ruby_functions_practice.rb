@@ -47,3 +47,7 @@ end
 def sphere_volume(radius)
   return ((4.0/3.0)*Math::PI*(radius**3)).to_i
 end
+
+def fhar_to_cel(fhar)
+  return
+end
