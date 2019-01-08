@@ -45,7 +45,7 @@ def cube_volume(side)
 end
 
 def sphere_volume(radius)
-  return ((4.0/3.0)*PI*(radius**3)).to_i
+  return ((4.0/3.0)*MATH::PI*(radius**3)).to_i
 end
 
 p sphere_volume(4)
