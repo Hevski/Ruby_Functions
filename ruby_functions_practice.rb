@@ -49,5 +49,5 @@ def sphere_volume(radius)
 end
 
 def fhar_to_cel(fhar)
-  return
+  return ((fhar - 30) / 2).to_i
 end
