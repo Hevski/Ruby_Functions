@@ -81,9 +81,14 @@ class FunctionsTest < MiniTest::Test
 #
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
+    #arrange - not needed
+
+    #act
     cube_volume_result = cube_volume(3)
+
+    #assert
     assert_equal(27, cube_volume_result)
-    #add test code here
+
   end
 #
   #Given the radius of a sphere calculate the volume
@@ -97,6 +102,12 @@ class FunctionsTest < MiniTest::Test
     fhar_to_cel_result = fhar_to_cel(40)
     assert_equal(5, fhar_to_cel_result)
   end
+
+  # A better and more accurate way to do this 
+  # def fhar_to_cel(fhar)
+  #   fhar_to_cel_result = (fhar - 40) * (5.0 / 9.0)
+  #   return fhar_to_cel_result.round(2)
+  # end
 #
 #
 end
